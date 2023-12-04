@@ -1,0 +1,7 @@
+<h5>parent component , data is going from parent to child component using input property</h5>
+<app-registration [parentData]="youtubeName" (childData)="childMessage=$event"></app-registration> <!--2nd step-->
+<!-- [parentData] is custom property -->
+<!-- 6th step-use event of same name and binding it with childMessage using $event -->
+
+<h5>{{childMessage}}</h5>
+<!--7th step - show data by interpolation -->
